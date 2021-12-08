@@ -1,18 +1,20 @@
-## [AnyDLBot](https://telegram.dog/AnyDLBot)
----
+## DEPLOY ON HEROKU
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/SpEcHiDe/AnyDLBot)
 
-An ~~Open Source~~ ALL-In-One Telegram RoBot, that can do lot of things.
-👉 check the 'branches' for all the features..!
+#Hard Way
 
-## Please use the `Releases` TAB, above to deploy this application!
+```bash
+# Create virtual environment
+python3 -m venv env
 
-## Credits, and Thanks to
+# Activate virtual environment
+env\Scripts\activate.bat # For Windows
+source env/bin/activate # For Linux or MacOS
 
-* [Dan Tès](https://telegram.dog/haskell) for his [Pyrogram Library](https://github.com/pyrogram/pyrogram)
-* [Yoily](https://telegram.dog/YoilyL) for his [UploaditBot](https://telegram.dog/UploaditBot)
+# Install Packages
+pip3 install -r requirements.txt
 
-
-- For FeedBack and Suggestions, please feel free to say in [@SpEcHlDe](https://telegram.dog/ThankTelegram)
-
-#### LICENSE
-- GPLv3
+# Edit info.py with variables as given below then run bot
+python3 bot.py
+```
+Check [`sample_info.py`](sample_info.py) before editing [`info.py`](info.py) file
